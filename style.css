@@ -1,0 +1,28 @@
+h1{
+    text-align: center;
+    color: #ffff;
+}
+
+#fundo{
+    background-image: url(img/fundo.jpg);
+    position: fixed;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    background-position: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#lamb {
+    position: relative;
+    left: 90px;
+    top: 170px;
+    height: 230px;
+}
+#porsche{
+    position: relative;
+    height: 295px;
+    top: 180px;
+    left: 100px;
+}
