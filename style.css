@@ -1,6 +1,10 @@
 h1{
+    position: fixed;
+    font-family: "Rowdies", sans-serif;
     text-align: center;
     color: #ffff;
+    margin-top: 10px;
+    font-size: 70px;
 }
 
 #fundo{
@@ -12,17 +16,20 @@ h1{
     background-position: center;
     height: 100vh;
     width: 100vw;
+    filter: blur(1px);
 }
 
 #lamb {
-    position: relative;
+    cursor: pointer;
+    position: absolute;
     left: 90px;
-    top: 170px;
+    top: 320px;
     height: 230px;
 }
 #porsche{
-    position: relative;
-    height: 295px;
-    top: 180px;
-    left: 100px;
+    cursor: pointer;
+    position: absolute;
+    height: 310px;
+    top: 260px;
+    left: 700px;
 }
