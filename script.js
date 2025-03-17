@@ -1,6 +1,9 @@
 function lambext() {
     let lamb = document.getElementById('lamb')
     let por = document.getElementById('porsche')
+    let info = document.getElementById('info-carros')
+
+    info.style.display = "block"
     // LAMBORGUINI
     lamb.style.transition = "0.5s"
     lamb.style.height = "390px"

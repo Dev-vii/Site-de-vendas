@@ -1,9 +1,13 @@
+*{
+    color: #ffff;
+}
+
 h1{
     position: fixed;
-    font-family: "Rowdies", sans-serif;
-    text-align: center;
-    color: #ffff;
+    font-family: "Oswald", sans-serif;
     margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
     font-size: 70px;
 }
 
@@ -32,4 +36,18 @@ h1{
     height: 310px;
     top: 260px;
     left: 700px;
+}
+
+#info-carros{
+    display: none;
+    position: absolute;
+    font-family: "Oswald", sans-serif;
+    font-size: 50px;
+    transform: translate(0, -50%);
+    top: 55%;
+    left: 800px;
+
+    & h2{
+        font-family: "Oswald", sans-serif;
+    } 
 }
