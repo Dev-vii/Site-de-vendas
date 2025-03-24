@@ -15,7 +15,9 @@ header {
     z-index: 10;
 
     & h1 {
+        cursor: pointer;
         position: relative;
+        text-decoration: none;
         top: -45px;
         left: 550px;
     }
@@ -34,7 +36,8 @@ header {
     position: relative;
     display: flex;
     gap: 20px;
-    top: 400px;
+    top: 300px;
+    justify-content: center;
 
     & .CarBox {
         cursor: pointer;
@@ -46,9 +49,17 @@ header {
         text-align: center;
     }
 
-    & .CarImg{
-        width: 100px;
-        height: 100px;
+    & .CarImg {
+        position: relative;
+        width: 280px;
+        height: 200px;
+        top: 10px;
     }
 
+    & p {
+        position: relative;
+        top: -40px;
+        font-family: "Anton", serif;
+        font-size: 40px;
+    }
 }
