@@ -29,31 +29,26 @@ header {
     }
 }
 
-.CarBox {
-    cursor: pointer;
-    position: absolute;
-    display: flex;
-    gap: 200px;
-    background-color: #d4d4d4;
-    border-radius: 40px;
-    height: 300px;
-    width: 300px;
-    top: 400px;
-    color: black;
-    text-align: center;
 
-    & p {
-        font-family: "Anton";
-        position: absolute;
-        left: 85px;
-        top: 170px;
-        font-size: 40px;
-        z-index: 3;
+.Cars {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    top: 400px;
+
+    & .CarBox {
+        cursor: pointer;
+        background-color: #d4d4d4;
+        border-radius: 40px;
+        height: 300px;
+        width: 300px;
+        color: black;
+        text-align: center;
     }
-}
-.Hyundai {
-    z-index: 2;
-    position: absolute;
-    height: 210px;
-    width: 300px;
+
+    & .CarImg{
+        width: 100px;
+        height: 100px;
+    }
+
 }
