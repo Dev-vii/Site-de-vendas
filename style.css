@@ -1,6 +1,11 @@
 body {
     background-color: #f0f0f0;
     z-index: 1;
+
+    a {
+        color: inherit;
+        text-decoration: none;
+    }
 }
 
 header {
@@ -17,7 +22,6 @@ header {
     & h1 {
         cursor: pointer;
         position: relative;
-        text-decoration: none;
         top: -45px;
         left: 550px;
     }
@@ -52,13 +56,14 @@ header {
     & .CarImg {
         position: relative;
         width: 280px;
-        height: 200px;
+        height: 170px;
         top: 10px;
     }
 
     & p {
+        cursor: auto;
         position: relative;
-        top: -40px;
+        top: -10px;
         font-family: "Anton", serif;
         font-size: 40px;
     }
