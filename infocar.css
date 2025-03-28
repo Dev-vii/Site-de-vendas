@@ -37,60 +37,67 @@ header {
     }
 }
 
-/* CARRO ESCOLHIDO */
-.CarBox {
-    position: absolute;
-    cursor: pointer;
-    background-color: #e6e6e6;
-    border-radius: 40px;
-    height: 500px;
-    width: 600px;
-    color: black;
-    top: 53%;
-    left: 100px;
-    transform: translate(0, -50%);
+section {
 
-    & .CarImg {
+    /* CARRO ESCOLHIDO */
+    & .CarBox {
+        position: fixed;
+        cursor: pointer;
+        background-color: #e6e6e6;
+        border-radius: 40px;
+        height: 500px;
+        width: 600px;
+        color: black;
+        top: 53%;
+        left: 2000px;
+        transform: translate(0, -50%);
+
+        & .CarImg {
+            position: relative;
+            width: 580px;
+            height: 370px;
+            top: 70px;
+        }
+
+        & p {
+            cursor: auto;
+            position: absolute;
+            white-space: nowrap;
+            top: -25px;
+            left: 750px;
+            font-size: 50px;
+            font-family: "Kanit", serif;
+        }
+    }
+
+    /* BOTÃO DE COMPRA */
+    & button {
+        cursor: pointer;
         position: relative;
-        width: 580px;
-        height: 370px;
-        top: 70px;
+        top: 360px;
+        left: 830px;
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        border: none;
+        background-color: #e9660f;
+        font-size: 40px;
+        font-family: "Kanit", sans-serif;
+        box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
     }
 
-    & p {
-        cursor: auto;
-        position: absolute;
-        white-space: nowrap;
-        top: 20px;
-        left: 750px;
-        font-size: 50px;
-        font-family: "Kanit", serif;
+    /* ANIMAÇÕES DO BOTÃO */
+    & button:hover {
+        transition: 0.2s;
+        top: 350px;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.15);
     }
-}
 
-/* BOTÃO DE COMPRA */
-button {
-    cursor: pointer;
-    position: relative;
-    top: 360px;
-    left: 830px;
-    width: 300px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color: #e9660f;
-    font-size: 40px;
-    font-family: "Kanit", sans-serif;
-    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
-}
+    & button:not(:hover) {
+        transition: 0.2s;
+    }
 
-/* ANIMAÇÕES DO BOTÃO */
-button:hover {
-    transition: 0.2s;
-    top: 350px;
-    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.15);
-}
-
-button:not(:hover) {
-    transition: 0.2s;
+    & .active {
+        left: 100px;
+    }
 }
