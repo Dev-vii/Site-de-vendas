@@ -38,6 +38,7 @@ header {
     }
 }
 
+/* INTRODUÇÃO */
 .Intro {
     position: absolute;
     z-index: 3;
@@ -91,11 +92,11 @@ header {
 
     & .CarBox {
         cursor: pointer;
-        background-color: #d4d4d4;
+        background-color: #eeeeee;
         border-radius: 40px;
         height: 300px;
         width: 300px;
-        color: black;
+        color: #0b0b0c;
     }
 
     & .CarImg {
@@ -110,6 +111,16 @@ header {
         position: relative;
         font-family: "PT Sans", sans-serif;
         font-size: 40px;
-        left: 40px;
+        text-align: center;
     }
+}
+
+.CarBox:hover {
+    margin-top: -10px;
+    transition: 0.2s;
+    box-shadow: 5px 5px 10px rgb(212, 212, 212);
+}
+
+.CarBox:not(:hover) {
+    transition: 0.2s;
 }

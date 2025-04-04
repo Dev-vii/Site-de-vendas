@@ -38,9 +38,10 @@ header {
     }
 }
 
+/* CORPO */
 section {
 
-    /* CARRO ESCOLHIDO */
+    /* CARROS NÃO ESCOLHIDOS */
     & .CarBox {
         position: relative;
         cursor: pointer;
@@ -98,6 +99,7 @@ section {
         transition: 0.2s;
     }
 
+    /* CARRO ESCOLHIDO */
     & .active {
         position: absolute;
         top: 100px;

@@ -7,8 +7,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const allCars = document.querySelectorAll(".CarBox"); // seleciona todos os carros
 
     allCars.forEach(car => { // roda uma função para cada carro da tela
-        if (car.dataset.car === carSelected) { //Se o carro clicado tiver as info corretas, ele aparece, se não, some
+        if (car.dataset.car === carSelected) { //Se o carro clicado tiver as info corretas, ele mostra os detalhes
             car.classList.add("active");
         }
     });
 });
+
+// ADD NO CARRINHO
+function AddInKart() {
+    window.alert("Item adicionado ao carrinho.")
+}
