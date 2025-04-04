@@ -42,31 +42,30 @@ section {
 
     /* CARRO ESCOLHIDO */
     & .CarBox {
-        position: fixed;
+        position: relative;
         cursor: pointer;
         background-color: #e6e6e6;
         border-radius: 40px;
-        height: 500px;
-        width: 600px;
+        height: 300px;
+        width: 700px;
         color: black;
-        top: 53%;
-        left: 2000px;
-        transform: translate(0, -50%);
+        top: 750px;
+        left: 120px;
 
         & .CarImg {
             position: relative;
-            width: 580px;
-            height: 370px;
-            top: 70px;
+            width: 380px;
+            height: 240px;
+            top: 30px;
         }
 
         & p {
             cursor: auto;
             position: absolute;
             white-space: nowrap;
-            top: -25px;
-            left: 750px;
-            font-size: 50px;
+            top: 30px;
+            left: 400px;
+            font-size: 35px;
             font-family: "Kanit", serif;
         }
     }
@@ -74,8 +73,8 @@ section {
     /* BOTÃO DE COMPRA */
     & button {
         cursor: pointer;
-        position: relative;
-        top: 360px;
+        position: absolute;
+        top: 380px;
         left: 830px;
         width: 300px;
         height: 100px;
@@ -91,7 +90,7 @@ section {
     /* ANIMAÇÕES DO BOTÃO */
     & button:hover {
         transition: 0.2s;
-        top: 350px;
+        top: 370px;
         box-shadow: 10px 10px 8px rgb(116, 116, 116);
     }
 
@@ -101,6 +100,21 @@ section {
 
     & .active {
         position: absolute;
-        left: 100px;
+        top: 100px;
+        left: 120px;
+        height: 500px;
+        width: 620px;
+
+        & .CarImg {
+            width: 580px;
+            height: 390px;
+            top: 40px;
+        }
+
+        & p {
+            top: -10px;
+            left: 720px;
+            font-size: 45px;
+        }
     }
 }

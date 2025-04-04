@@ -9,8 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     allCars.forEach(car => { // roda uma função para cada carro da tela
         if (car.dataset.car === carSelected) { //Se o carro clicado tiver as info corretas, ele aparece, se não, some
             car.classList.add("active");
-        } else {
-            car.style.display = "none";
         }
     });
 });
