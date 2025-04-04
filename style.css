@@ -49,18 +49,35 @@ header {
     background-color: #0f13e9;
     color: #f0f0f0;
 
-    h2{
-        font-size: 120px;
+    h2 {
+        font-size: 135px;
         position: absolute;
         top: 0;
-        left: 50px;
+        left: 80px;
     }
 
-    p{
-        font-size: 35px; 
+    p {
+        font-size: 40px;
         position: absolute;
         top: 230px;
-        left: 50px;
+        left: 80px;
+    }
+
+    .Model1 {
+
+        & .Balloon {
+            position: absolute;
+            left: 800px;
+            top: 90px;
+            width: 450px;
+        }
+
+        & .CarModel {
+            position: absolute;
+            width: 450px;
+            left: 700px;
+            top: 120px;
+        }
     }
 }
 
@@ -79,21 +96,20 @@ header {
         height: 300px;
         width: 300px;
         color: black;
-        text-align: center;
     }
 
     & .CarImg {
         position: relative;
         width: 280px;
         height: 170px;
-        top: 10px;
+        top: 20px;
     }
 
     & p {
         cursor: auto;
         position: relative;
-        top: -10px;
-        font-family: "Anton", serif;
+        font-family: "PT Sans", sans-serif;
         font-size: 40px;
+        left: 40px;
     }
 }
