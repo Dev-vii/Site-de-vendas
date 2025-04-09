@@ -12,8 +12,3 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
-
-// ADD NO CARRINHO
-function AddInKart() {
-    window.alert("Item adicionado ao carrinho.")
-}

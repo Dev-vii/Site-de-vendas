@@ -41,6 +41,29 @@ header {
 /* CORPO */
 section {
 
+    h2 {
+        position: absolute;
+        font-family: "Kanit", serif;
+        font-size: 70px;
+        top: 700px;
+        left: 130px;
+    }
+
+    .ButtonKart {
+        position: absolute;
+        font-family: "PT Sans", sans-serif;
+        font-size: 15px;
+        top: 500px;
+        left: 900px;
+    }
+
+    .Cars {
+        position: relative;
+        display: grid;
+        grid-column: auto;
+        gap: 30px;
+    }
+
     /* CARROS NÃO ESCOLHIDOS */
     & .CarBox {
         position: relative;
@@ -50,8 +73,10 @@ section {
         height: 300px;
         width: 700px;
         color: black;
-        top: 750px;
+        top: 900px;
         left: 120px;
+        gap: 20px;
+        box-shadow: 10px 10px 10px rgb(224, 224, 224);
 
         & .CarImg {
             position: relative;
@@ -72,7 +97,7 @@ section {
     }
 
     /* BOTÃO DE COMPRA */
-    & button {
+    & .ButtonBuy {
         cursor: pointer;
         position: absolute;
         top: 380px;
@@ -89,13 +114,13 @@ section {
     }
 
     /* ANIMAÇÕES DO BOTÃO */
-    & button:hover {
+    & .ButtonBuy:hover {
         transition: 0.2s;
         top: 370px;
         box-shadow: 10px 10px 8px rgb(116, 116, 116);
     }
 
-    & button:not(:hover) {
+    & .ButtonBuy:not(:hover) {
         transition: 0.2s;
     }
 
