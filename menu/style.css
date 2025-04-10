@@ -58,9 +58,9 @@ header {
     }
 
     p {
-        font-size: 40px;
+        font-size: 35px;
         position: absolute;
-        top: 230px;
+        top: 233px;
         left: 80px;
     }
 
@@ -94,7 +94,7 @@ header {
         cursor: pointer;
         background-color: #eeeeee;
         border-radius: 40px;
-        height: 300px;
+        height: 320px;
         width: 300px;
         color: #0b0b0c;
     }
@@ -110,7 +110,7 @@ header {
         cursor: auto;
         position: relative;
         font-family: "PT Sans", sans-serif;
-        font-size: 40px;
+        font-size: 35px;
         text-align: center;
     }
 }
@@ -161,4 +161,95 @@ footer {
         right: 200px;
         text-align: center;
     }
+}
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 800px) {
+
+    header {
+        left: 0;
+
+        & h1 {
+            text-align: left;
+            left: 20px;
+        }
+
+        & .AddKart {
+            left: 330px;
+        }
+    }
+
+    .Intro {
+
+        h2 {
+            font-size: 70px;
+            top: 10px;
+            left: 30px;
+        }
+
+        p {
+            font-size: 20px;
+            top: 128px;
+            left: 30px;
+        }
+
+        .Model1 {
+
+            & .Balloon {
+                left: 60px;
+                top: 190px;
+                width: 320px;
+            }
+
+            & .CarModel {
+                width: 350px;
+                left: 20px;
+                top: 210px;
+            }
+        }
+    }
+
+    .Cars {
+        display: grid;
+        grid-column: auto;
+        gap: 30px;
+
+        & .CarBox {
+            height: 300px;
+            width: 350px;
+            box-shadow: 5px 5px 10px rgb(212, 212, 212);
+        }
+
+        & .CarImg {
+            width: 280px;
+            height: 170px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        & p {
+            top: -20px;
+        }
+    }
+
+    /* FOOTER */
+footer {
+    top: 1600px;
+
+    & h3 {
+        font-size: 30px;
+        left: 40px;
+        top: 40px;
+    }
+
+    & .barra {
+        height: 100px;
+        top: 50px; 
+    }
+
+    & p {
+        right: 30px;
+        text-align: center;
+    }
+}
 }

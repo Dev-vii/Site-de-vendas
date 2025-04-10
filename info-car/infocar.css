@@ -92,8 +92,8 @@ section {
     & .ButtonKart {
         cursor: pointer;
         position: absolute;
-        top: 520px;
-        left: 875px;
+        top: 510px;
+        left: 920px;
         font-family: "PT Sans", sans-serif;
         font-size: 20px;
         z-index: 9;
@@ -187,5 +187,21 @@ footer {
         top: 60px;
         right: 200px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    header {
+        left: 0;
+    
+        & h1 {
+            text-align: left;
+            left: 20px;
+        }
+    
+        & .AddKart {
+            left: 330px;
+        }
     }
 }
