@@ -166,6 +166,7 @@ footer {
 /* RESPONSIVIDADE */
 @media screen and (max-width: 800px) {
 
+    /* HEADER */
     header {
         left: 0;
 
@@ -179,6 +180,7 @@ footer {
         }
     }
 
+    /* INTRODUÇÃO COM OFERTAS */
     .Intro {
 
         h2 {
@@ -209,6 +211,7 @@ footer {
         }
     }
 
+    /* OPÇÕES DE CARRO */
     .Cars {
         display: grid;
         grid-column: auto;
@@ -233,23 +236,23 @@ footer {
     }
 
     /* FOOTER */
-footer {
-    top: 1600px;
+    footer {
+        top: 1600px;
 
-    & h3 {
-        font-size: 30px;
-        left: 40px;
-        top: 40px;
-    }
+        & h3 {
+            font-size: 30px;
+            left: 40px;
+            top: 40px;
+        }
 
-    & .barra {
-        height: 100px;
-        top: 50px; 
-    }
+        & .barra {
+            height: 100px;
+            top: 50px;
+        }
 
-    & p {
-        right: 30px;
-        text-align: center;
+        & p {
+            right: 30px;
+            text-align: center;
+        }
     }
-}
 }

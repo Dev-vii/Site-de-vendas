@@ -190,18 +190,122 @@ footer {
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 800px) {
 
+    /* HEADER */
     header {
         left: 0;
-    
+
         & h1 {
             text-align: left;
             left: 20px;
         }
-    
+
         & .AddKart {
             left: 330px;
+        }
+    }
+
+    section {
+
+        h2 {
+            font-size: 45px;
+            left: 30px;
+            top: 780px;
+        }
+
+        .Cars {
+            position: relative;
+            display: grid;
+            grid-column: auto;
+            gap: 30px;
+        }
+
+        /* CARROS NÃO ESCOLHIDOS */
+        & .CarBox {
+            height: 250px;
+            width: 340px;
+            top: 900px;
+            left: 20px;
+
+            & .CarImg {
+                width: 340px;
+                height: 200px;
+                top: 20px;
+            }
+
+            & p {
+                left: -850px;
+            }
+        }
+
+        /* BOTÕES */
+        & .ButtonKart {
+            top: 620px;
+            left: 155px;
+            font-size: 17px;
+        }
+
+        & .ButtonBuy {
+            top: 560px;
+            left: 100px;
+            width: 200px;
+            height: 50px;
+            font-size: 30px;
+        }
+
+        /* ANIMAÇÕES DO BOTÃO */
+        & .ButtonBuy:hover {
+            top: 555px;
+        }
+
+        & .ButtonBuy:not(:hover) {
+            transition: 0.2s;
+        }
+
+        /* CARRO ESCOLHIDO */
+        & .active {
+            position: absolute;
+            top: 100px;
+            left: 20px;
+            height: 300px;
+            width: 340px;
+
+            & .CarImg {
+                width: 330px;
+                height: 210px;
+                top: 40px;
+            }
+
+            & p {
+                top: 280px;
+                left: 75px;
+                text-align: center;
+                font-size: 30px;
+            }
+        }
+    }
+
+
+
+    /* FOOTER */
+    footer {
+        top: 1550px;
+
+        & h3 {
+            font-size: 30px;
+            left: 40px;
+            top: 40px;
+        }
+
+        & .barra {
+            height: 100px;
+            top: 50px;
+        }
+
+        & p {
+            right: 30px;
+            text-align: center;
         }
     }
 }
