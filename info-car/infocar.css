@@ -241,22 +241,23 @@ footer {
 
         /* BOTÕES */
         & .ButtonKart {
-            top: 620px;
+            top: 740px;
             left: 155px;
             font-size: 17px;
         }
 
         & .ButtonBuy {
-            top: 560px;
-            left: 100px;
-            width: 200px;
-            height: 50px;
+            top: 640px;
+            left: 50%;
+            transform: translate(-50%);
+            width: 300px;
+            height: 70px;
             font-size: 30px;
         }
 
         /* ANIMAÇÕES DO BOTÃO */
         & .ButtonBuy:hover {
-            top: 555px;
+            top: 630px;
         }
 
         & .ButtonBuy:not(:hover) {
@@ -278,10 +279,10 @@ footer {
             }
 
             & p {
+                position: absolute;
                 top: 280px;
-                left: 75px;
-                text-align: center;
-                font-size: 30px;
+                left: 20px;
+                font-size: 40px;
             }
         }
     }

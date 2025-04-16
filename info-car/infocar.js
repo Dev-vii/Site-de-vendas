@@ -1,4 +1,4 @@
-    //DÚVIDAS
+//DÚVIDAS
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);
     const carSelected = urlParams.get("car"); // faz o código enteder que cada div tem um conteúdo diferente e as nomeia diferente

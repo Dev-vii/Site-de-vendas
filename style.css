@@ -94,7 +94,7 @@ header {
         cursor: pointer;
         background-color: #eeeeee;
         border-radius: 40px;
-        height: 320px;
+        height: 340px;
         width: 300px;
         color: #0b0b0c;
     }
@@ -106,12 +106,12 @@ header {
         top: 20px;
     }
 
-    & p {
-        cursor: auto;
+    .Parags {
         position: relative;
+        cursor: auto;
         font-family: "PT Sans", sans-serif;
-        font-size: 35px;
-        text-align: center;
+        font-size: 30px;
+        left: 30px;
     }
 }
 
