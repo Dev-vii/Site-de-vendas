@@ -86,35 +86,34 @@ section {
             font-size: 35px;
             font-family: "Kanit", serif;
         }
-    }
 
-    .OtherPhotos {
-        position: absolute;
-        cursor: pointer;
-        left: 60px;
-        top: 40%;
-        transform: translate(0, -50%);
-
-        & .PhotoBox {
+        .OtherPhotos {
             position: absolute;
-            display: grid;
-            gap: 10px;
-
-            & .Model1,
-            .Model2 {
-                border-radius: 15px;
-                height: 80px;
-                width: 80px;
-                background-color: #e6e6e6;
-            }
-
-            & .ModelOp {
+            cursor: pointer;
+            left: -100px;
+            top: 30%;
+            transform: translate(0, -50%);
+    
+            & .PhotoBox {
+                position: absolute;
                 display: none;
-                position: relative;
-                height: 50%;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                gap: 10px;
+    
+                & .Model1,
+                .Model2 {
+                    border-radius: 15px;
+                    height: 80px;
+                    width: 80px;
+                    background-color: #e6e6e6;
+                }
+    
+                & .ModelOp {
+                    position: relative;
+                    height: 50%;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
             }
         }
     }
@@ -180,6 +179,10 @@ section {
             left: 680px;
             font-size: 45px;
         }
+    }
+
+    & .modelActive {
+        display: grid;
     }
 }
 
