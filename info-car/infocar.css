@@ -86,28 +86,35 @@ section {
             font-size: 35px;
             font-family: "Kanit", serif;
         }
+    }
 
-        & .OtherPhotos {
+    .OtherPhotos {
+        position: absolute;
+        cursor: pointer;
+        left: 60px;
+        top: 40%;
+        transform: translate(0, -50%);
+
+        & .PhotoBox {
             position: absolute;
-            left: -100px;
-            top: 50%;
-            transform: translate(0, -50%);
             display: grid;
             gap: 10px;
 
-            & .PhotoModel {
+            & .Model1,
+            .Model2 {
                 border-radius: 15px;
                 height: 80px;
                 width: 80px;
                 background-color: #e6e6e6;
+            }
 
-                & .ModelOp {
-                    position: relative;
-                    height: 50%;
-                    top: 50%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-                }
+            & .ModelOp {
+                display: none;
+                position: relative;
+                height: 50%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
     }
