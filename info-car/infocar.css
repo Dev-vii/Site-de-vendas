@@ -99,8 +99,7 @@ section {
                 display: none;
                 gap: 10px;
 
-                & .Model1,
-                .Model2 {
+                & .Model {
                     border-radius: 15px;
                     height: 80px;
                     width: 80px;
