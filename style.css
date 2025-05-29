@@ -83,46 +83,52 @@ header {
 }
 
 /* OPÇÕES DE CARROS */
-.Cars {
+table {
     position: relative;
-    display: flex;
-    gap: 20px;
-    top: 550px;
-    justify-content: center;
+    display: grid;
 
-    & .CarBox {
-        cursor: pointer;
-        background-color: #eeeeee;
-        border-radius: 40px;
-        height: 340px;
-        width: 300px;
-        color: #0b0b0c;
-    }
-
-    & .CarImg {
+    & tr {
         position: relative;
-        width: 280px;
-        height: 170px;
-        top: 20px;
+        display: flex;
+        gap: 20px;
+        top: 550px;
+        align-items: center;
+        justify-content: center;
+
+        & .CarBox {
+            cursor: pointer;
+            background-color: #eeeeee;
+            border-radius: 40px;
+            height: 340px;
+            width: 300px;
+            color: #0b0b0c;
+        }
+
+        & .CarImg {
+            position: relative;
+            width: 280px;
+            height: 170px;
+            top: 20px;
+        }
+
+        .Parags {
+            position: relative;
+            cursor: auto;
+            font-family: "PT Sans", sans-serif;
+            font-size: 30px;
+            left: 30px;
+        }
     }
 
-    .Parags {
-        position: relative;
-        cursor: auto;
-        font-family: "PT Sans", sans-serif;
-        font-size: 30px;
-        left: 30px;
+    .CarBox:hover {
+        margin-top: -10px;
+        transition: 0.2s;
+        box-shadow: 5px 5px 10px rgb(212, 212, 212);
     }
-}
 
-.CarBox:hover {
-    margin-top: -10px;
-    transition: 0.2s;
-    box-shadow: 5px 5px 10px rgb(212, 212, 212);
-}
-
-.CarBox:not(:hover) {
-    transition: 0.2s;
+    .CarBox:not(:hover) {
+        transition: 0.2s;
+    }
 }
 
 /* FOOTER */
@@ -132,7 +138,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 200px;
-    top: 1000px;
+    top: 1400px;
     left: 0;
 
     & h3 {
