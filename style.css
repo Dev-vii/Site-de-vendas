@@ -83,11 +83,12 @@ header {
 }
 
 /* OPÇÕES DE CARROS */
-table {
+.allOptions {
     position: relative;
     display: grid;
+    gap: 30px;
 
-    & tr {
+    & .line {
         position: relative;
         display: flex;
         gap: 20px;
