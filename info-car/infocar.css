@@ -25,8 +25,19 @@ header {
     & h1 {
         cursor: pointer;
         position: relative;
-        text-align: center;
         top: -45px;
+        left: 80px;
+    }
+
+    & .searchBar{
+        position: relative;
+        top: -130px;
+        left: 50%;
+        width: 600px;
+        height: 40px;
+        background-color: #eeeeee;
+        border-radius: 30px;
+        transform: translate(-50%);
     }
 
     & .AddKart {
