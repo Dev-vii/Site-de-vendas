@@ -29,7 +29,7 @@ header {
         left: 80px;
     }
 
-    & .searchBar{
+    & .searchBar {
         position: relative;
         top: -130px;
         left: 50%;
@@ -119,8 +119,7 @@ header {
 
         & .CarImg {
             position: relative;
-            width: 280px;
-            height: 170px;
+            height: 180px;
             top: 20px;
             left: 50%;
             transform: translate(-50%);
