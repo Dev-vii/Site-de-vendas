@@ -9,6 +9,14 @@ body {
     }
 }
 
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Sobe para o lugar original */
+    }
+}
+
 /* HEADER */
 header {
     position: fixed;
@@ -177,6 +185,9 @@ section {
         left: 160px;
         height: 500px;
         width: 580px;
+        opacity: 0;
+        transform: translateY(20px);
+        animation: fadeUp 0.5s ease-out forwards;
 
         & .CarImg {
             position: relative;
