@@ -39,13 +39,39 @@ header {
     & .searchBar {
         position: relative;
         top: -130px;
-        left: 50%;
-        width: 600px;
+        left: 45%;
+        width: 550px;
         height: 40px;
         background-color: #eeeeee;
         border-radius: 30px;
         box-shadow: 5px 5px 10px rgb(82, 82, 82);
         transform: translate(-50%);
+    }
+
+    #button1 {
+        cursor: pointer;
+        position: relative;
+        font-family: "Kanit", sans-serif;
+        top: -173px;
+        left: 68.5%;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 3px 4px 5px rgb(131, 131, 131);
+    }
+
+    #button2 {
+        cursor: pointer;
+        position: relative;
+        font-family: "Kanit", sans-serif;
+        top: -173px;
+        left: 69%;
+        width: 100px;
+        height: 30px;
+        border: none;
+        border-radius: 30px;
+        box-shadow: 3px 4px 5px rgb(131, 131, 131);
     }
 
     & .AddKart {
@@ -126,11 +152,6 @@ header {
             height: 340px;
             width: 360px;
             color: #0b0b0c;
-        }
-
-        body.dark-mode .CarBox {
-            background-color: #2a2a2a;
-            color: #ffffff;
         }
 
         & .CarImg {
@@ -301,21 +322,38 @@ body.dark-mode {
 }
 
 body.dark-mode header {
-    background-color: #1e1e1e;
+    background-color: #111111;
     color: white;
 }
 
+body.dark-mode .searchBar {
+     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
 body.dark-mode .Intro {
-    background-color: #1a1a1a;
+    background-color: #262d4b;
     color: #ffffff;
 }
 
-body.dark-mode #CarBox {
+body.dark-mode .CarBox {
     background-color: #2a2a2a;
     color: #ffffff;
+    border-radius: 40px;
+    height: 340px;
+    width: 360px;
+}
+
+body.dark-mode .CarBox:hover {
+    margin-top: -10px;
+    transition: 0.2s;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+
+body.dark-mode .CarBox:not(:hover) {
+    transition: 0.2s;
 }
 
 body.dark-mode footer {
-    background-color: #1e1e1e;
+    background-color: #050505;
     color: #ffffff;
 }
