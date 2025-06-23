@@ -375,12 +375,13 @@ body.dark-mode .CarBox {
     border-radius: 40px;
     height: 340px;
     width: 360px;
+    transition: 0.2s;
 }
 
 body.dark-mode .CarBox:hover {
     margin-top: -10px;
-    transition: 0.2s;
     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 0.2s;
 }
 
 body.dark-mode .CarBox:not(:hover) {
@@ -390,4 +391,5 @@ body.dark-mode .CarBox:not(:hover) {
 body.dark-mode footer {
     background-color: #050505;
     color: #ffffff;
+    transition: 0.2s;
 }
