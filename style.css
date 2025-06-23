@@ -36,7 +36,7 @@ header {
         left: 80px;
     }
 
-    & .searchBar {
+    & .Search {
         position: relative;
         top: -130px;
         left: 45%;
@@ -44,11 +44,26 @@ header {
         height: 40px;
         background-color: #eeeeee;
         border-radius: 30px;
+        border: none;
         box-shadow: 5px 5px 10px rgb(82, 82, 82);
         transform: translate(-50%);
+
+        & i {
+            position: relative;
+            left: 10px;
+            height: 1px;
+        }
+
+        & #searchBar {
+            position: relative;
+            border: none;
+            background-color: #eeeeee;
+            font-size: 20px;
+            left: 20px;
+        }
     }
 
-    #button1 {
+    & #button1 {
         cursor: pointer;
         position: relative;
         font-family: "Kanit", sans-serif;
@@ -61,7 +76,7 @@ header {
         box-shadow: 3px 4px 5px rgb(131, 131, 131);
     }
 
-    #button2 {
+    & #button2 {
         cursor: pointer;
         position: relative;
         font-family: "Kanit", sans-serif;
@@ -326,7 +341,7 @@ body.dark-mode header {
     color: white;
 }
 
-body.dark-mode .searchBar {
+body.dark-mode .Search, .dark-mode #button1, .dark-mode #button2 {
      box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
