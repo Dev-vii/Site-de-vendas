@@ -52,6 +52,7 @@ header {
             position: relative;
             left: 10px;
             height: 1px;
+            color: #0f13e9;
         }
 
         & #searchBar {
@@ -71,6 +72,8 @@ header {
         left: 68.5%;
         width: 100px;
         height: 30px;
+        background-color: #1316d3;
+        color: #ffffff;
         border: none;
         border-radius: 30px;
         box-shadow: 3px 4px 5px rgb(131, 131, 131);
@@ -334,20 +337,36 @@ footer {
 body.dark-mode {
     background-color: #121212;
     color: #ffffff;
+    transition: 0.2s;
 }
 
 body.dark-mode header {
     background-color: #111111;
     color: white;
+    transition: 0.2s;
 }
 
-body.dark-mode .Search, .dark-mode #button1, .dark-mode #button2 {
-     box-shadow: 5px 5px 10px rgb(0, 0, 0);
+body.dark-mode i {
+    color: #111111;
+    transition: 0.2s;
+}
+
+body.dark-mode .Search,
+.dark-mode #button2 {
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+body.dark-mode #button1 {
+    background-color: #2a2a2a;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+    transition: 0.2s;
 }
 
 body.dark-mode .Intro {
     background-color: #262d4b;
     color: #ffffff;
+    transition: 0.2s;
 }
 
 body.dark-mode .CarBox {
