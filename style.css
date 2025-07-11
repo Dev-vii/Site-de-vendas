@@ -243,30 +243,73 @@ footer {
 
     /* HEADER */
     header {
+        top: 0;
         left: 0;
+        height: 110px;
 
         & h1 {
             text-align: left;
             left: 20px;
         }
 
+        & .Search {
+            top: -80px;
+            left: 140px;
+            width: 250px;
+            height: 30px;
+            box-shadow: 5px 5px 10px rgb(82, 82, 82);
+
+            & i {
+                left: 10px;
+                top: -3px;
+            }
+
+            & #searchBar {
+                top: -6px;
+                left: 15px;
+                width: 150px;
+                height: 20px;
+            }
+        }
+
+        & #button1 {
+            top: -124px;
+            left: 275px;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(9, 22, 58);
+            border-radius: 30px;
+            font-size: 0;
+        }
+
+        & #button2 {
+            top: -124px;
+            left: 282px;
+            width: 30px;
+            height: 30px;
+            background-color: #fad119;
+            border-radius: 30px;
+            font-size: 0;
+        }
+
         & .AddKart {
-            left: 330px;
+            left: 310px;
         }
     }
 
     /* INTRODUÇÃO COM OFERTAS */
     .Intro {
+        top: 45px;
 
         h2 {
-            font-size: 70px;
+            font-size: 72px;
             top: 10px;
             left: 30px;
         }
 
         p {
-            font-size: 20px;
-            top: 128px;
+            font-size: 21px;
+            top: 132px;
             left: 30px;
         }
 
