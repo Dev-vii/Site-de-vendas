@@ -269,14 +269,38 @@ footer {
     /* HEADER */
     header {
         left: 0;
+        height: 100px;
+        font-size: 27px;
 
         & h1 {
             text-align: left;
             left: 20px;
         }
 
+        & #button1 {
+            top: -106px;
+            left: 275px;
+            width: 30px;
+            height: 30px;
+            background-color: rgb(9, 22, 58);
+            border-radius: 30px;
+            font-size: 0;
+            box-shadow: 3px 4px 5px rgb(12, 12, 12);
+        }
+
+        & #button2 {
+            top: -106px;
+            left: 282px;
+            width: 30px;
+            height: 30px;
+            background-color: #fad119;
+            border-radius: 30px;
+            font-size: 0;
+            box-shadow: 3px 4px 5px rgb(12, 12, 12);
+        }
+
         & .AddKart {
-            left: 330px;
+            left: 315px;
         }
     }
 
@@ -316,8 +340,9 @@ footer {
         /* BOTÕES */
         & .ButtonKart {
             top: 740px;
-            left: 155px;
+            left: 50%;
             font-size: 17px;
+            transform: translate(-50%);
         }
 
         & .ButtonBuy {
@@ -341,7 +366,7 @@ footer {
         /* CARRO ESCOLHIDO */
         & .active {
             position: absolute;
-            top: 100px;
+            top: 110px;
             left: 20px;
             height: 300px;
             width: 340px;
@@ -365,7 +390,7 @@ footer {
 
     /* FOOTER */
     footer {
-        top: 1550px;
+        top: 2350px;
 
         & h3 {
             font-size: 30px;
@@ -403,7 +428,12 @@ body.dark-mode i {
     transition: 0.2s;
 }
 
-body.dark-mode #button1,
+body.dark-mode #button1 {
+    background-color: #2a2a2a;
+    box-shadow: 3px 4px 5px rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
 body.dark-mode #button2 {
     box-shadow: 3px 4px 5px rgb(0, 0, 0);
     transition: 0.2s;
