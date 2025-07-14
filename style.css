@@ -163,9 +163,9 @@ header {
         align-items: center;
         justify-content: center;
 
-        & #CarBox {
+        & .CarBox {
             cursor: pointer;
-            background-color: #eeeeee;
+            background-color: #e0e0e0;
             border-radius: 40px;
             height: 340px;
             width: 360px;
@@ -413,11 +413,8 @@ body.dark-mode .Intro {
 }
 
 body.dark-mode .CarBox {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border-radius: 40px;
-    height: 340px;
-    width: 360px;
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
     transition: 0.2s;
 }
 
