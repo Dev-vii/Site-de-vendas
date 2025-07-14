@@ -330,32 +330,39 @@ footer {
     }
 
     /* OPÇÕES DE CARRO */
-    .Cars {
-        display: grid;
-        grid-column: auto;
-        gap: 30px;
+    .allOptions {
+        gap: 20px;
 
-        & .CarBox {
-            height: 300px;
-            width: 350px;
-            box-shadow: 5px 5px 10px rgb(212, 212, 212);
-        }
+        & .line {
+            display: grid;
+            gap: 20px;
 
-        & .CarImg {
-            width: 280px;
-            height: 170px;
-            left: 50%;
-            transform: translate(-50%);
-        }
+            & .CarBox {
+                height: 180px;
+                width: 340px;
+                box-shadow: 5px 5px 10px rgb(212, 212, 212);
+            }
 
-        & p {
-            top: -20px;
+            & .CarImg {
+                top: 50%;
+                left: 90px;
+                width: 180px;
+                height: 110px;
+                transform: translate(-50%, -50%);
+            }
+
+            & p {
+                position: relative;
+                top: -80px;
+                left: 160px;
+                font-size: 20px;
+            }
         }
     }
 
     /* FOOTER */
     footer {
-        top: 1600px;
+        top: 1780px;
 
         & h3 {
             font-size: 30px;
@@ -425,6 +432,7 @@ body.dark-mode .CarBox:hover {
 }
 
 body.dark-mode .CarBox:not(:hover) {
+    box-shadow: none;
     transition: 0.2s;
 }
 
