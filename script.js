@@ -29,3 +29,8 @@ inputsearch.addEventListener('input', (event) => {
 function formatString(value) {
     return value.toLowerCase().trim()
 }
+
+closeCookies = () => {
+    const cookies = document.querySelector('.cookies')
+    cookies.style.display = 'none'
+}

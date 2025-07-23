@@ -125,7 +125,7 @@ section {
             position: absolute;
             cursor: pointer;
             left: -100px;
-            top: 30%;
+            top: 25%;
             transform: translate(0, -50%);
 
             & .PhotoBox {
@@ -446,6 +446,7 @@ body.dark-mode #button1 {
     background-color: #2a2a2a;
     box-shadow: 3px 4px 5px rgb(0, 0, 0);
     transition: 0.2s;
+    color: #f0f0f0;
 }
 
 body.dark-mode #button2 {
